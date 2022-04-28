@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Gallery</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .gallery{
+        width: 100%;
+        padding: 10px 10px;
+        }
+        .gallery1{
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        }
+        .text{
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        }
+        .gallery1 h1{
+        font-size: 40px;
+        text-align: center;
+        }
+        .gallery1 h3{
+        font-size: 30px;
+        }
+        .gallery1 h3{
+        font-size: 18px;
+        padding: 20px 10px;
+        }
+        .ima{
+        width: 100%;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;   
+        
+        }
+        .mobile1{
+        width:20%;
+        padding: 10px 0px;
+        margin: 10px 20px;
+        }
+        .mobile1 img{
+        width: 100%;
+        height: 30vh;
+        }
+        
+        .footer{
+        width: 100%;
+        background: #111;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 20px;
+        }
+        .footer1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        }
+        .footer-text{
+            
+            width: 45%;
+           
+        }
+        .footer-text i{
+            color: green;
+            font-size: 20px;
+            padding: 20px 20px;
+        }
+        
+        .footer-text  span{
+            font-size: 15px;
+            color: #777;
+        }
+        .footer-text h4{
+        color: #fff;
+        }
+        .footer-text p{
+        color: #fff;
+        }
+        .store{
+        padding: 20px 10px;
+        }
+        .store h3{
+        color: #fff;
+        font-size: 20px;
+        }
+        .store ul{
+        padding: 10px 0;
+        }
+        .store ul li {
+        padding: 6px 0;
+        }
+        .store ul li a{
+        color: #777;
+        text-decoration: none;
+        }
+        .store ul li a:hover{
+        text-decoration: underline;
+        }
+        .icon1{
+        width: 20%;
+        padding: 0px 10px;
+        display: inline-block;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .icon1 img{
+        max-width: 25px;
+        height: 25px;
+        border-radius: 10px;
+        
+        }
+        .icon1 img:hover{
+        transform: translateY(-5px);
+        transition: 1s;
+        }
+        .icon1 p{
+        color: #fff;
+        font-size: 19px;
+        padding: 10px 0;
+        }
+        .text{
+        
+        width: 100%;
+        display: block;
+        align-content:center;
+        }
+        h5{
+        color: #Fff;
+        margin: -4% 12% auto;
+        font-size: 15px;
+        }
+        .text img{
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        }
+        @media screen and (max-width: 991px) {
+        .ima{
+        width: 100%;
+        padding: 10px 0px;
+        
+        }
+        .mobile1{
+        width:42%;
+        height: 25vh;
+        padding: 10px 0px;
+        margin: 10px 10px;
+        
+        }
+        .mobile1 img{
+        width: 100%;
+        height: 100%;
+        }
+        
+        .footer{
+        width: 100%;
+        background: #111;
+        padding: 10px 20px;
+        }
+        .footer1{
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0px;
+        }
+        .footer-text {
+            width: 100%;
+        }
+        .footer-text h4{
+        color: #fff;
+        }
+        .footer-text p{
+        color: #fff;
+        }
+        .store{
+        padding: 20px 0px;
+        width: 100%;
+        }
+        .store h3{
+        color: #fff;
+        font-size: 20px;
+        }
+        .store ul{
+        padding: 10px 0;
+        }
+        .store ul li {
+        padding: 6px 0;
+        }
+        .store ul li a{
+        color: #777;
+        text-decoration: none;
+        }
+        .store ul li a:hover{
+        text-decoration: underline;
+        }
+        .icon1{
+        width: 100%;
+        padding: 0px 10px;
+        display:inline-block;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .icon1 img{
+        max-width: 25px;
+        height: 25px;
+        border-radius: 10px;
+        
+        }
+        .icon1 img:hover{
+        transform: translateY(-5px);
+        transition: 1s;
+        }
+        .icon1 p{
+        color: #fff;
+        font-size: 19px;
+        padding: 10px 0;
+        }
+        .text{
+        width: 100%;
+        padding-top: 15px;
+        }
+        h5{
+        color: #Fff;
+        font-size: 13px;
+        margin: 10px 0px;
+        }
+        }
+        </style>
+  </head>
+  <body>
+    <section class="gallery">
+        <div class="gallery1">
+        <div class="text">  
+        <h1>Gallery</h1>
+        <h3>All  Mobile Accessories Images</h3>
+        <p>We stock a range of mobile accessories at different price points. Sourced from some of the most trusted manufacturers like Samsung, Romoss, Xiaomi, Targus, Remax, Kingston, Transcend, Orico and Tronsmart, our tablet and mobile phone accessories come with a warranty.</p>
+        </div>
+        <div class="ima">
+        <div class="mobile1">
+        <img src="6.jpg" >
+        </div> 
+        <div class="mobile1">
+        <img src="7.jpg" >
+        </div>   
+        <div class="mobile1">
+        <img src="8.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="9.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="12.jpg">
+        </div>  
+        <div class="mobile1">
+        <img src="img/14.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="14.webp">
+        </div>   
+        <div class="mobile1">
+        <img src="15.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="16.jpg">
+        
+        </div> 
+        <div class="mobile1">
+        <img src="img/17.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="img/18.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="img/19.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="img/20.jpg">
+        </div> 
+       <div class="mobile1">
+       <img src="img/21.jpg">
+        </div>  
+        <div class="mobile1">
+       <img src="img/22.jpg">
+      </div>  
+     <div class="mobile1">
+        <img src="img/23.jpg" >
+        </div>   
+        <div class="mobile1">
+        <img src="img/24.jpg">
+        
+        </div> 
+        <div class="mobile1">
+        <img src="img/26.jpg" >
+        </div>   
+        <div class="mobile1">
+        <img src="img/15.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="img/16.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="img/17.jpg">
+        </div>  
+        <div class="mobile1">
+        <img src="img/18.jpg">
+        </div>   
+        <div class="mobile1">
+        <img src="img/19.jpg"  >
+        </div>   
+        <div class="mobile1">
+       <img src="img/23.jpg"  >
+       </div> 
+       </div> 
+        </div>
+        </div>
+        </section>
+        <!--footer-->
+        <section class="footer">
+        <div class="footer1">
+        <div class="footer-text">
+        <h4>Branch :</h4>
+        <p>Shop #22 S.R.T.C Complex Beasement Chandni Road hyd</p>
+        <i class="fa fa-phone"></i><span>#03133883927</span><br>
+        <i class="fa fa-globe"></i><span>Ambreenkhan@mail.com</span>
+        
+        </div>
+        <div class="store">
+        <h3>Store Policies</h3>
+        <ul>
+        <li><a href="#">Warranty</a></li>
+        <li><a href="#">Refund & Exchange</a></li>
+        <li><a href="#">Security & Privacy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+        </div>
+        <div class="icon1">
+        <p>Contact US</p>
+        <a href="#"><img src="fb.png" ></a>
+        <a href="#"><img src="tw.png" ></a>
+        <a href="#"><img src="yt.png" ></a>
+        <a href="#"><img src="in.png" ></a>
+        </div>
+        </div>
+        <div class="text">
+        <img src="logo1.jpg" >
+        <h5>©Copyright 2020 by Mehran mobile Online. All Rights Reserved.</h5>
+        </div>
+        </section>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+ <style>
+    .body{
+      background-color: aqua;
+    }
+    .box{
+      width: 100%;
+      height: 45vh;
+      background: linear-gradient(rgb(112, 107, 107),rgb(167, 113, 140));
+     }
+     .title h1{
+       color:#fff;
+       text-align: center;
+       padding: 35px;
+     } 
+    /* .imgbox{
+        width:%;
+        height:vh;
+        border-radius:20px;
+        } */
+    img{
+      width: 200px;
+      height: 264px;
+      border-radius: 13px;
+    }
+   
+    .card{
+        width: 20%;
+        height: 345px;
+        border-radius:20px;
+        display:inline-block;
+        margin: 20px;
+      }
+    .p{
+      text-decoration: none;
+    }
+   /* .card:hover{
+     transform: translateX(20px);
+     transition: 1s;
+   } */
+   .card .imgbox:hover{
+     transform: translateY(-20);
+     transition: 0.3s;
+   }
+   .icon3{
+     position:absolute;
+     z-index: 3;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: flex;
+     padding: 0;
+     margin: 0;
+   }
+   .icon3 li{
+     list-style: none;
+   }
+   .icon3 li a{
+     margin: 0 10%;
+     color: #fff !important;
+     font-size: 30px;
+     padding: 5px 2px;
+     transition: 0.5s;
+     position: relative;
+     display: block;
+     width: 40px;
+     height: 40px;
+     transform: translateY(2px);
+     opacity: 0;
+   }
+   .card:hover .icon3 li a{
+     transform: translateY(0px);
+     opacity: 1;
+   }
+   .icon img{
+     width:30px;
+     height:50px;
+     padding:2px;
+     margin-top:10px;
+    }
+    .icon img:hover{
+      transform: translateY(-5px);
+      transition: 1s;
+    }
+    .btn{
+     padding-right: 20px;
+     margin-left: 900px;
+    
+    }
+
+    .accessoires h1{
+      text-align:center;
+      margin: 60px;
+    }
+    .logo img{
+      width: 80px;
+      height: 90px;
+     margin-top: 5px;
+     padding-left: 10px;
+      border-radius: 42px;
+    }
+    .row{
+      background: linear-gradient(rgb(167, 113, 140),rgb(167, 113, 140));
+      
+    }
+    
+.footer{
+width: 100%;
+background: #111;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+padding: 10px 20px;
+}
+.footer1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+.footer-text{
+    
+    width: 45%;
+   
+}
+.footer-text i{
+    color: green;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+
+.footer-text  span{
+    font-size: 15px;
+    color: #777;
+}
+
+.footer-text h4{
+color: #fff;
+}
+.footer-text p{
+color: #fff;
+}
+.store{
+padding: 20px 10px;
+}
+.store h3{
+color: #fff;
+font-size: 20px;
+}
+.store ul{
+padding: 10px 0;
+}
+.store ul li {
+padding: 6px 0;
+}
+.store ul li a{
+color: #777;
+text-decoration: none;
+}
+.store ul li a:hover{
+text-decoration: underline;
+}
+.icon1{
+width: 20%;
+padding: 0px 10px;
+display: inline-block;
+justify-content: space-between;
+align-items: center;
+}
+.icon1 img{
+max-width: 25px;
+height: 25px;
+border-radius: 10px;
+
+}
+.icon1 img:hover{
+transform: translateY(-5px);
+transition: 1s;
+}
+.icon1 p{
+color: #fff;
+font-size: 19px;
+padding: 10px 0;
+}
+.text{
+width: 100%;
+display: flex;
+align-content:center;
+}
+h5{
+color: #Fff;
+margin: 4% 10% auto;
+font-size: 15px;
+}
+.text img{
+width: 60px;
+height: 60px;
+border-radius: 60px;
+}
+@media screen and (max-width:991px ){
+    .about h1 {
+font-size: 45px;
+margin-left:0%;
+}
+.about{
+width: 100%;
+flex-basis: 50%;
+padding: 20px 20px;
+}
+
+.footer{
+width: 100%;
+background: #111;
+padding: 10px 20px;
+}
+.footer1{
+flex-direction: column;
+width: 100%;
+}
+.footer-text {
+    width: 100%;
+}
+.footer-text h4{
+color: #fff;
+}
+.footer-text p{
+color: #fff;
+}
+.store{
+padding: 20px 0px;
+width: 100%;
+}
+.store h3{
+color: #fff;
+font-size: 20px;
+}
+.store ul{
+padding: 10px 0;
+}
+.store ul li {
+padding: 6px 0;
+}
+.store ul li a{
+color: #777;
+text-decoration: none;
+}
+.store ul li a:hover{
+text-decoration: underline;
+}
+.icon1{
+width: 100%;
+padding: 0px 10px;
+display:inline-block;
+justify-content: space-between;
+align-items: center;
+}
+.icon1 img{
+max-width: 25px;
+height: 25px;
+border-radius: 10px;
+
+}
+.icon1 img:hover{
+transform: translateY(-5px);
+transition: 1s;
+}
+.icon1 p{
+color: #fff;
+font-size: 19px;
+padding: 10px 0;
+}
+.text{
+width: 100%;
+padding-top: 15px;
+}
+h5{
+color: #Fff;
+font-size: 13px;
+
+}
+}
+
+
+ 
+
+   
+</style>
+</head>
+   <body> 
+     
+   <div class="box">
+          <div class="icon">
+            <a href="#"><img src="tw.png"></a>
+            <a href="#"><img src="fb.png"></a>
+            <a href="#"><img src="in.png"></a>
+            <a href="#"><img src="yt.png"></a>
+            <a href="#"><img src="whatapp.webp"></a>
+          </div>
+        
+         
+         <div class="title">
+          <h1>Mehran Mobile</h1>
+         </div>
+          
+         
+                          
+         <div class="logo">
+             <img src="logo1.jpg" alt="">
+         </div>
+         <div class="row">
+          <div class="col-md-12">
+              <nav class="navbar navbar-light bg- navbar-expand-md">
+                  <a href="#" class="navebar-brand"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                  <div class="navbar-collapse collapse" id="main-navbar">
+                
+                 
+                          <ul class="navbar-nav ml-auto">
+                          <li class="nav-item"><a href="index.html"style="text-decoration: none;color:white;" class="nav-link"> Home</a></li>
+                          <li class="nav-item"><a href="About.html"style="text-decoration: none;color:white;" class="nav-link"> About</a></li>
+                          <li class="nav-item"><a href="Gallery.html"style="text-decoration: none;color:white;" class="nav-link"> Gallery</a></li>
+                          <li class="nav-item"><a href="Gallery.html"style="text-decoration: none;color:white;" class="nav-link"> Mobile Accessoires</a></li>
+                          <li class="nav-item"><a href="contact.html"style="text-decoration: none;color:white;" class="nav-link"> Contact</a></li>
+                            </ul>
+                            </nav>
+                         </div>
+                         </div> 
+                         </div>
+      
+         
+         <!-- <button class="btn btn-md btn-success">login</button>
+         <button class="btn btn-md btn-close">sign up</button> -->
+         
+    </div>
+  </div>
+  <!---mobile accessoires--->
+   <section class="accessoires">
+    <h1>Mobile Accessories</h1>
+    <p>We stock a range of mobile accessories at different
+       price points. Sourced from some of the most trusted
+       manufacturers like Samsung, Romoss, Xiaomi,
+       Targus, Remax, Kingston, Transcend, Orico 
+       and Tronsmart, our tablet and mobile phone 
+       accessories come with a warranty.
+       </p> 
+      <div class="card">
+         <div class="imgbox">
+              <img src="img/1.jpg"></div>
+              <hr/>
+              <div class="p">
+                  <p>backpouch of oppo A37 <span>Rs,200</span></p>
+                  <ul class="icon3">
+                  <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="img/1.jpg"><i class="fa fa-image"></i></a></li>
+                </ul>
+              </div>
+             </div>        
+          </div>
+      </div>
+       <div class="card">
+        <div class="imgbox">
+             <img src="img/2.jpg"></div>
+             <hr/>
+             <div class="p">
+                 <p>hands free Rs.300</p>
+                 <ul class="icon3">
+                 <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                 <li><a href="img/2.jpg"><i class="fa fa-image"></i></a></li>
+               </ul>
+             </div>
+            </div>        
+         </div>
+     </div> 
+     <div class="card">
+      <div class="imgbox">
+           <img src="img/11.jpg"></div>
+           <hr/>
+           <div class="p">
+               <p>oppo s5 20.000</p>
+               <ul class="icon3">
+               <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+               <li><a href="img/11.jpg"><i class="fa fa-image"></i></a></li>
+             </ul>
+           </div>
+          </div>        
+       </div>
+   </div>
+   <div class="card">
+    <div class="imgbox">
+         <img src="img/4.jpg"></div>
+         <hr/>
+         <div class="p">
+             <p>hands free Rs.270</p>
+             <ul class="icon3">
+             <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+             <li><a href="#"><i class="fa fa-heart"></i></a></li>
+             <li><a href="img/4.jpg"><i class="fa fa-image"></i></a></li>
+           </ul>
+         </div>
+        </div>        
+     </div>
+ </div>
+ <div class="card">
+  <div class="imgbox">
+       <img src="img/5.jpg"></div>
+       <hr/>
+       <div class="p">
+           <p>bacpouch of oppo Rs,250</p>
+           <ul class="icon3">
+           <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+           <li><a href="#"><i class="fa fa-heart"></i></a></li>
+           <li><a href="img/5.jpg"><i class="fa fa-image"></i></a></li>
+         </ul>
+       </div>
+      </div>        
+   </div>
+</div>
+<div class="card">
+  <div class="imgbox">
+       <img src="img/6.jpg"></div>
+       <hr/>
+       <div class="p">
+           <p>backpouch of samsung j5 pro Rs,170</p>
+           <ul class="icon3">
+           <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+           <li><a href="#"><i class="fa fa-heart"></i></a></li>
+           <li><a href="img/6.jpg"><i class="fa fa-image"></i></a></li>
+         </ul>
+       </div>
+      </div>        
+   </div>
+</div>
+<div class="card">
+  <div class="imgbox">
+       <img src="img/7.jpg"></div>
+       <hr/>
+       <div class="p">
+           <p>infinix Rs,350</p>
+           <ul class="icon3">
+           <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+           <li><a href="#"><i class="fa fa-heart"></i></a></li>
+           <li><a href="img/7.jpg"><i class="fa fa-image"></i></a></li>
+         </ul>
+       </div>
+      </div>        
+   </div>
+</div>
+<div class="card">
+  <div class="imgbox">
+       <img src="img/15.jpg"></div>
+       <hr/>
+       <div class="p">
+           <p> backpouch of samsung j5 pro Rs,170</p>
+           <ul class="icon3">
+           <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+           <li><a href="#"><i class="fa fa-heart"></i></a></li>
+           <li><a href="img/15.jpg"><i class="fa fa-image"></i></a></li>
+         </ul>
+       </div>
+      </div>        
+   </div>
+</div>
+       <!-- <ul class="icon3">
+        <li><a href="credit card.html"><i class="fa fa-shopping-cart"></i></a></li> 
+        <li> <a href=""><i class="fa fa-heart"></i></a></li>
+        <li><a href="IMG-20191205-WA0012.jpg"><i class="fa fa-image"></i></a></li> 
+        </ul> -->
+        <div class="card">
+          <div class="imgbox">
+               <img src="img/9.jpg"></div>
+               <hr/>
+               <div class="p">
+                   <p>Ear-phone of akekio Rs,350</p>
+                   <ul class="icon3">
+                   <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                   <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                   <li><a href="img/9.jpg"><i class="fa fa-image"></i></a></li>
+                 </ul>
+               </div>
+              </div>        
+           </div>
+        </div>
+               <!-- <ul class="icon3">
+                <li><a href="credit card.html"><i class="fa fa-shopping-cart"></i></a></li> 
+                <li> <a href=""><i class="fa fa-heart"></i></a></li>
+                <li><a href="IMG-20191205-WA0012.jpg"><i class="fa fa-image"></i></a></li> 
+                </ul> -->
+                <div class="card">
+                  <div class="imgbox">
+                       <img src="img/33.jpg"></div>
+                       <hr/>
+                       <div class="p">
+                           <p>backpouch of oppo Rs,170</p>
+                           <ul class="icon3">
+                           <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                           <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                           <li><a href="img/33.jpg"><i class="fa fa-image"></i></a></li>
+                         </ul>
+                       </div>
+                      </div>        
+                   </div>
+                </div>
+                       <!-- <ul class="icon3">
+                        <li><a href="credit card.html"><i class="fa fa-shopping-cart"></i></a></li> 
+                        <li> <a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href="IMG-20191205-WA0012.jpg"><i class="fa fa-image"></i></a></li> 
+                        </ul> -->
+                        <div class="card">
+                          <div class="imgbox">
+                               <img src="img/31.jpg"></div>
+                               <hr/>
+                               <div class="p">
+                                   <p>backpouch of samsung Rs,150</p>
+                                   <ul class="icon3">
+                                   <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                   <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                   <li><a href="img/31.jpg"><i class="fa fa-image"></i></a></li>
+                                 </ul>
+                               </div>
+                              </div>        
+                           </div>
+                        </div>
+                               <ul class="icon3">
+                                <li><a href="credit card.html"><i class="fa fa-shopping-cart"></i></a></li> 
+                                <li> <a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href="IMG-20191205-WA0012.jpg"><i class="fa fa-image"></i></a></li> 
+                                </ul>
+                                <div class="card">
+                                  <div class="imgbox">
+                                       <img src="img/32.jpg"></div>
+                                       <hr/>
+                                       <div class="p">
+                                           <p>charger of samsung faster Rs,300</p>
+                                           <ul class="icon3">
+                                           <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                           <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                           <li><a href="img/32.jpg"><i class="fa fa-image"></i></a></li>
+                                         </ul>
+                                       </div>
+                                      </div>        
+                                   </div>
+                                </div>
+                                       <ul class="icon3">
+                                        <li><a href="credit card.html"><i class="fa fa-shopping-cart"></i></a></li> 
+                                        <li> <a href=""><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="IMG-20191205-WA0012.jpg"><i class="fa fa-image"></i></a></li> 
+                                        </ul>
+                                        <!--footer-->
+<section class="footer">
+  <div class="footer1">
+  <div class="footer-text">
+  <h4>Branch :</h4>
+  <p>Shop #22 S.R.T.C Complex Beasement Chandni Road hyd</p>
+  <i class="fa fa-phone"></i><span>#03133883927</span><br>
+<i class="fa fa-globe "></i><span>Ambreenkhan@mail.com</span>
+  
+  </div>
+  <div class="store">
+  <h3>Store Policies</h3>
+  <ul>
+  <li><a href="#">Warranty</a></li>
+  <li><a href="#">Refund & Exchange</a></li>
+  <li><a href="#">Security & Privacy</a></li>
+  <li><a href="#">Terms & Conditions</a></li>
+  </ul>
+  </div>
+  <div class="icon1">
+  <p>Contact US</p>
+  <a href="#"><img src="tw.png"></a>
+  <a href="#"><img src="fb.png"></a>
+  <a href="#"><img src="in.png"></a>
+  <a href="#"><img src="yt.png"></a>
+  <a href="#"><img src="whatapp.webp"></a>
+  </div>
+  </div>
+  <div class="text">
+      <img src="logo1.jpg" >
+  <h5>©Copyright 2020 by Mehran mobile Online. All Rights Reserved.</h5>
+  </div>
+  </section>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
